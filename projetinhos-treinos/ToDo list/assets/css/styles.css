@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(177, 225, 255);
+}
+
+p{
+    font-size: 20pt;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid lightcoral;
+    background-color: rgb(241, 214, 214);
+    color: rgb(15, 9, 105);
+    font-size: 20pt;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+#counter {
+    display: inline;
+   
+}
+
+#currentNumber {
+    display: inline;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 20pt;
+}

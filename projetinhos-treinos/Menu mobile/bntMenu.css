@@ -1,0 +1,17 @@
+.btnMenu {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 25px;
+   
+}
+
+.btnMenu_open {    
+    background-image: url(image/menu-preto.svg);    
+}
+
+.btnMenu_close {
+    background-color: rgb(179, 214, 238);
+    background-image: url(image/menu-preto.svg);  
+}

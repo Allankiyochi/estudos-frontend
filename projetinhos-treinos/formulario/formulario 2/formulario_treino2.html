@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="formulario_treino2.css">
+        <script src="JavaScript1.js"></script>
+
+        <title>Cadastro</title>
+
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Cadastro de Dedicantes</h1>
+            <p id="subtitulo">Preencha com suas informações</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label class="perguntas" for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" size="30em" placeholder="Digite seu nome" required>                
+                </div>                
+            </fieldset>
+
+            <div class="campo">
+                <label class="perguntas" for="email">Email</label>
+                <input type="email" name="email" placeholder="fulano@mail.com" id="email" size="30em" required>
+            </div>
+
+            <div class="campo">
+                <label class="perguntas" for="tel">Celular</label>
+                <input type="tel" name="tel" id="tel" placeholder="(xx)xxxxx-xxxx" size="30em" required>
+            </div>
+
+            <div class="campo">
+                <label class="perguntas" for="jc">Selecione o Johrei Center que você dedica:</label>
+                <select id="jc">                 
+                    <option selected disabled value="">Selecione</option> 
+                    <option>Igreja Recife</option>
+                    <option>JC Boa Viagem</option>
+                    <option>JC Olinda</option>
+                    <option>JC Caxangá</option>
+                    <option>JC Carpina</option>
+                    <option>JC Petrolina</option>                    
+                </select>            
+            </div>
+
+            <div class="campo">
+                <label class="perguntas">Você é Membro ou Frequentador?:</label>
+                <label class="item">
+                    <input type="radio" name="dev" value="membro" checked>membro
+                </label>
+                <label class="item">
+                    <input type="radio" name="dev" value="frequentador">frequentador
+                </label>                
+            </div>
+
+            <div class="campo">
+                <label class="perguntas">Qual o seu nível no Sanguetsu:</label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="basico" checked>básico
+                </label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="normal">normal
+                </label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="senka1">senka I
+                </label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="senka2">senka II
+                </label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="senshukai">senshukai
+                </label>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="checkbox">
+                    <label class="perguntas">Você participa de quais atividades:</label><br><br>
+                    <input type="checkbox" name="flor" id="flor4" value="Hatsuike">
+                    <label for="flor4">Hatsu-ike</label>
+                    <br>
+                    <input type="checkbox" name="flor" id="flor1" value="Primavera">
+                    <label for="flor1">Vivência da Primavera</label>
+                    <br>
+                    <input type="checkbox" name="flor" id="flor2" value="Mães">
+                    <label for="flor2">Vivência dos Dias das Mães</label>
+                    <br>
+                    <input type="checkbox" name="flor" id="flor3" value="Natalício">
+                    <label for="flor3">Vivência do Natalício de Meishu Sama</label>
+                    <br>                   
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label class="perguntas">Conte-nos como você conheceu <strong>Meishu-Sama</strong>:</label>
+                <textarea name="experiencia" id="experiencia" cols="20" rows="6" style="width: 26em;"></textarea>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label class="perguntas">Conte-nos sobre sua experiência com a <strong>Flor</strong>:</label>
+                <textarea name="expjob" id="expjob" cols="20" rows="6" style="width: 26em;"></textarea>
+            </div>
+            
+            <button class="botao" type="submit" onclick="enviar()" value="enviar">Concluído</button>
+            
+        </form>        
+    </body>
+</html>

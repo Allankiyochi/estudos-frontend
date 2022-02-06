@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="formulario_treino.css">
+
+        <title>Cadastro</title>
+
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Cadastro de Parceiros</h1>
+            <p id="subtitulo">Complete com seus dados</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label class="perguntas" for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>                
+                </div>
+
+                <div class="campo">
+                    <label class="perguntas" for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label class="perguntas" for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label class="perguntas" for="estado">Selecione o Estado que você reside:</label>
+                <select id="estado">                 
+                    <option selected disabled value="">Selecione</option> 
+                    <option value="ac">Acre</option> 
+                    <option value="al">Alagoas</option> 
+                    <option value="am">Amazonas</option> 
+                    <option value="ap">Amapá</option> 
+                    <option value="ba">Bahia</option> 
+                    <option value="ce">Ceará</option> 
+                    <option value="df">Distrito Federal</option> 
+                    <option value="es">Espírito Santo</option> 
+                    <option value="go">Goiás</option> 
+                    <option value="ma">Maranhão</option> 
+                    <option value="mt">Mato Grosso</option> 
+                    <option value="ms">Mato Grosso do Sul</option> 
+                    <option value="mg">Minas Gerais</option> 
+                    <option value="pa">Pará</option> 
+                    <option value="pb">Paraíba</option> 
+                    <option value="pr">Paraná</option> 
+                    <option value="pe">Pernambuco</option> 
+                    <option value="pi">Piauí</option> 
+                    <option value="rj">Rio de Janeiro</option> 
+                    <option value="rn">Rio Grande do Norte</option> 
+                    <option value="ro">Rondônia</option> 
+                    <option value="rs">Rio Grande do Sul</option> 
+                    <option value="rr">Roraima</option> 
+                    <option value="sc">Santa Catarina</option> 
+                    <option value="se">Sergipe</option> 
+                    <option value="sp">São Paulo</option> 
+                    <option value="to">Tocantins</option> 
+                </select>            
+            </div>
+
+            <div class="campo">
+                <label class="perguntas">Dev tipo:</label>
+                <label class="item">
+                    <input type="radio" name="dev" value="frontend" checked>front-end
+                </label>
+                <label class="item">
+                    <input type="radio" name="dev" value="backend">back-end
+                </label>
+                <label class="item">
+                    <input type="radio" name="dev" value="fullstack">full stack
+                </label>
+            </div>
+
+            <div class="campo">
+                <label class="perguntas">Qual o seu nível:</label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="junior" checked>junior
+                </label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="pleno">pleno
+                </label>
+                <label class="item">
+                    <input type="radio" name="lvl" value="senior">senior
+                </label>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="checkbox">
+                    <label class="perguntas">Skills:</label><br><br>
+                    <input type="checkbox" name="tec1" id="tec1" value="HTML">
+                    <label for="tec1">HTML</label>
+                    <input type="checkbox" name="tec2" id="tec2" value="CSS">
+                    <label for="tec2">CSS</label>
+                    <input type="checkbox" name="tec3" id="tec3" value="JavaScript">
+                    <label for="tec3">JavaScript</label>
+                    <input type="checkbox" name="tec4" id="tec4" value="PHP">
+                    <label for="tec4">PHP</label>
+                    <input type="checkbox" name="tec5" id="tec5" value="C#">
+                    <label for="tec5">C#</label>
+                    <br><br>
+                    <input type="checkbox" name="tec6" id="tec6" value="C++">
+                    <label for="tec6">C++</label>
+                    <input type="checkbox" name="tec7" id="tec7" value="C.">
+                    <label for="tec7">C.</label>
+                    <input type="checkbox" name="tec8" id="tec8" value="Python">
+                    <label for="tec8">Python</label>
+                    <input type="checkbox" name="tec9" id="tec9" value="Java">
+                    <label for="tec9">Java</label>
+                    <input type="checkbox" name="tec10" id="tec10" value="Ruby">
+                    <label for="tec10">Ruby</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label class="perguntas">Conte-me um pouco sobre você</label>
+                <textarea name="experiencia" id="experiencia" cols="20" rows="6" style="width: 26em;"></textarea>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label class="perguntas">Fale sobre sua experiência de trabalho:</label>
+                <textarea name="expjob" id="expjob" cols="20" rows="6" style="width: 26em;"></textarea>
+            </div>
+            
+            <button class="botao" type="submit" onsubmit="">Done</button>
+
+        </form>        
+    </body>
+</html>
